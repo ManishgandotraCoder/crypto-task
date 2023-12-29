@@ -5,9 +5,9 @@ import { cryptoList , cryptoConversion} from "../../redux/actions/crypto.actions
 import { cryptoReducerType } from "./currency-convertor.type"
 const CurrencyconvertorComponentHelper = () => {
     const [formvalues, setFormvalues] = useState({
-        Currency: '',
+        Currency: 'usd',
         Crypto: '',
-        Amount: 0
+        Amount: 1
     })
     const [submit, setSubmit] = useState(false)
     const dispatch = useDispatch()

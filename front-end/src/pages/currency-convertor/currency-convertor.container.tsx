@@ -38,7 +38,7 @@ const CurrencyConvertorContainerComponent = ({ submit, handleSubmit, formvalues,
                         <Button handleSubmit={handleSubmit} />
                     </li>
                     <li>
-                        {submit && <span>{formvalues.Amount} {formvalues.Crypto} costs ' {amount} {formvalues.Currency}'s</span>}
+                        {submit && <span>{formvalues.Amount} {formvalues.Crypto} costs {amount} {formvalues.Currency}'s</span>}
                     </li>
                 </ul>
             </form>
