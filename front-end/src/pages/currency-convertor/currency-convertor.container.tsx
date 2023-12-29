@@ -1,9 +1,10 @@
 import React, { useEffect } from "react"
 import './currency-convertor.css'
 import { currencyConvertorType } from "./currency-convertor.type"
-import Input from "../../components/input/input";
-import Select from "../../components/select/select";
-import Button from "../../components/button/button";
+const Input = React.lazy(() => import("../../components/input/input"));
+const Select = React.lazy(() => import("../../components/select/select"));
+const Button = React.lazy(() => import("../../components/button/button"));
+
 const CurrencyConvertorContainerComponent = ({ submit, handleSubmit, formvalues, changeValues, cryptoList, amount }: currencyConvertorType) => {
     const currencyList = [
         { name: "US Dollar", id: "usd" },
